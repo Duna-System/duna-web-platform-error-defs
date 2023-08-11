@@ -2,9 +2,10 @@
   "name": "duna-web-platform-error-defs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/ErrorMessages.js",
+  "types": "dist/ErrorMessages.d.ts",
   "scripts": {
-    "build": "tsc --noEmit ErrorMessages"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

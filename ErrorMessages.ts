@@ -7,7 +7,7 @@ export interface IError {
 }
 
 /* General response messages */
-export declare const ErrorMessages = {
+export const ErrorMessages = {
   // Auth group
   Unauthorized: {
     errorCode: 400,

@@ -49,7 +49,7 @@ exports.ErrorMessages = {
         errorMessage: 'Project already exists',
         errorDetails: '<details>',
     },
-    ProjectDoesNotExit: {
+    ProjectDoesNotExists: {
         errorCode: 301,
         errorMessage: 'Project does not exist.',
         errorDetails: '<details>',

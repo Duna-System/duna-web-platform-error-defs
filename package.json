@@ -1,0 +1,22 @@
+{
+  "name": "duna-web-platform-error-defs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --noEmit ErrorMessages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duna-System/duna-web-platform-error-defs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duna-System/duna-web-platform-error-defs/issues"
+  },
+  "homepage": "https://github.com/Duna-System/duna-web-platform-error-defs#readme",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}

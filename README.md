@@ -15,3 +15,4 @@ In your application, simply add this repository:
 Then include the error definitions. Example:
 
 - `import {  ErrorMessages } from 'duna-web-platform-error-defs'`
+

@@ -1,58 +1,77 @@
+import { StatusCodes } from 'http-status-codes';
 export interface IError {
-    errorCode: number;
-    errorMessage: string;
-    errorDetails?: string;
+    Code: number;
+    Message: string;
+    Details?: string;
+    HTTPStatus: number;
 }
 export declare const ErrorMessages: {
+    Unknown: {
+        Code: number;
+        Message: string;
+        HTTPStatus: number;
+    };
     Unauthorized: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     UnauthorizedorInvalid: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     MismatchingTokenParameter: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     InvalidEntity: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     InvalidFormat: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     ConversionInProgress: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     EntityAlreadyExists: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     EntityDoesNotExist: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     QuotaFull: {
-        errorCode: number;
-        errorMessage: string;
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
     };
     ProjectExists: {
-        errorCode: number;
-        errorMessage: string;
-        errorDetails: string;
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
     };
     ProjectDoesNotExit: {
-        errorCode: number;
-        errorMessage: string;
-        errorDetails: string;
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
     };
     CancelException: {
-        errorCode: number;
-        errorMessage: string;
-        errorDetails: string;
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
     };
 };

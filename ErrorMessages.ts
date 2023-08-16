@@ -1,72 +1,91 @@
 /* Error object definition. */
+import {StatusCodes} from 'http-status-codes'
 
 export interface IError {
-  errorCode: number;
-  errorMessage: string;
-  errorDetails?: string;
+  Code: number;
+  Message: string;
+  Details?: string;
+  HTTPStatus: number;
 }
 
 /* General response messages */
 export const ErrorMessages = {
+  Unknown: {
+    Code: 999,
+    Message: 'Unknown Error',
+    HTTPStatus: 999
+  },
   // Auth group
   Unauthorized: {
-    errorCode: 400,
-    errorMessage: 'Unauthorized',
+    Code: 400,
+    Message: 'Unauthorized',
+    HTTPStatus: StatusCodes.UNAUTHORIZED
   },
   UnauthorizedorInvalid: {
-    errorCode: 401,
-    errorMessage: 'Unauthorized.Mismatching or invalid token.',
+    Code: 401,
+    Message: 'Unauthorized.Mismatching or invalid token.',
+    HTTPStatus: StatusCodes.UNAUTHORIZED
   },
   MismatchingTokenParameter: {
-    errorCode: 402,
-    errorMessage: 'Mismatching Token parameters',
+    Code: 402,
+    Message: 'Mismatching Token parameters',
+    HTTPStatus: StatusCodes.UNAUTHORIZED
   },
 
   // Entity Group
   InvalidEntity: {
-    errorCode: 101,
-    errorMessage: 'Invalid Entity Type',
+    Code: 101,
+    Message: 'Invalid Entity Type',
+    HTTPStatus: StatusCodes.BAD_REQUEST
   },
   InvalidFormat: {
-    errorCode: 102,
-    errorMessage: 'Invalid Format.',
+    Code: 102,
+    Message: 'Invalid Format.',
+    HTTPStatus: StatusCodes.BAD_REQUEST
   },
   ConversionInProgress: {
-    errorCode: 103,
-    errorMessage: 'ConversionStillInProgress',
+    Code: 103,
+    Message: 'ConversionStillInProgress',
+    HTTPStatus: StatusCodes.ACCEPTED
   },
   EntityAlreadyExists: {
-    errorCode: 104,
-    errorMessage: 'Entity Already Exists',
+    Code: 104,
+    Message: 'Entity Already Exists',
+    HTTPStatus: StatusCodes.CONFLICT
   },
 
   EntityDoesNotExist: {
-    errorCode: 105,
-    errorMessage: 'Entity does not exist.',
+    Code: 105,
+    Message: 'Entity does not exist.',
+    HTTPStatus: StatusCodes.NOT_FOUND
   },
 
   // Quota
   QuotaFull: {
-    errorCode: 200,
-    errorMessage: 'Quota is Full',
+    Code: 200,
+    Message: 'Quota is Full',
+    HTTPStatus: StatusCodes.PAYMENT_REQUIRED
   },
 
   // Project group
   ProjectExists: {
-    errorCode: 300,
-    errorMessage: 'Project already exists',
-    errorDetails: '<details>',
+    Code: 300,
+    Message: 'Project already exists',
+    Details: '<details>',
+    HTTPStatus: StatusCodes.CONFLICT
   },
-  ProjectDoesNotExit: {
-    errorCode: 301,
-    errorMessage: 'Project does not exist.',
-    errorDetails: '<details>',
+  ProjectDoesNotExist: {
+    Code: 301,
+    Message: 'Project does not exist.',
+    Details: '<details>',
+    HTTPStatus: StatusCodes.NOT_FOUND
   },
 
   // Conversions
   CancelException: {
-    errorCode: 500,
-    errorMessage: 'Error canceling excpetion.',
-    errorDetails: '<details>',
+    Code: 500,
+    Message: 'Error canceling excpetion.',
+    Details: '<details>',
+    HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR
   },
 } satisfies Record<string, IError>;

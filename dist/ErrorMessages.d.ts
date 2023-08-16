@@ -62,7 +62,7 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
-    ProjectDoesNotExit: {
+    ProjectDoesNotExist: {
         Code: number;
         Message: string;
         Details: string;

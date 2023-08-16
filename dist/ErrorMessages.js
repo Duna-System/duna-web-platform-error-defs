@@ -65,7 +65,7 @@ exports.ErrorMessages = {
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.CONFLICT
     },
-    ProjectDoesNotExit: {
+    ProjectDoesNotExist: {
         Code: 301,
         Message: 'Project does not exist.',
         Details: '<details>',

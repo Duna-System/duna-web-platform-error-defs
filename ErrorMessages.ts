@@ -31,6 +31,11 @@ export const ErrorMessages = {
         Message: 'Mismatching Token parameters',
         HTTPStatus: StatusCodes.UNAUTHORIZED,
     },
+    IncorrectKey: {
+        Code: 403,
+        Message: 'Incorrect key or password',
+        HTTPStatus: StatusCodes.FORBIDDEN,
+    },
 
     // Entity Group
     InvalidEntity: {

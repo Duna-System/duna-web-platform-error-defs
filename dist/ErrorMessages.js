@@ -26,6 +26,11 @@ exports.ErrorMessages = {
         Message: 'Mismatching Token parameters',
         HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
     },
+    IncorrectKey: {
+        Code: 403,
+        Message: 'Incorrect key or password',
+        HTTPStatus: http_status_codes_1.StatusCodes.FORBIDDEN,
+    },
     // Entity Group
     InvalidEntity: {
         Code: 101,

@@ -26,6 +26,11 @@ export declare const ErrorMessages: {
         Message: string;
         HTTPStatus: StatusCodes;
     };
+    IncorrectKey: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
     InvalidEntity: {
         Code: number;
         Message: string;

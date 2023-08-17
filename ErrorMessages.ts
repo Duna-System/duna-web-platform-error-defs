@@ -84,8 +84,16 @@ export const ErrorMessages = {
   // Conversions
   CancelException: {
     Code: 500,
-    Message: 'Error canceling excpetion.',
+    Message: 'Error canceling exception.',
     Details: '<details>',
     HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR
   },
+
+  // Generic
+  InternalServerError: {
+    Code: 500,
+    Message: 'Internal Server Error',
+    Details: '<details>',
+    HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR
+  }
 } satisfies Record<string, IError>;

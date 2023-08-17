@@ -74,4 +74,10 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
+    InternalServerError: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
 };

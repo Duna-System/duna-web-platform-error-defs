@@ -4,7 +4,7 @@ This repository contains error definitions to be shared among duna-web-platform 
 
 ## Check
 
-- `npm run build`
+-   `npm run build`
 
 ## Usage
 
@@ -14,5 +14,4 @@ In your application, simply add this repository:
 
 Then include the error definitions. Example:
 
-- `import {  ErrorMessages } from 'duna-web-platform-error-defs'`
-
+-   `import {  ErrorMessages } from 'duna-web-platform-error-defs'`

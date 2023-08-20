@@ -106,6 +106,32 @@ exports.ErrorMessages = {
     DatabaseOperationError: {
         Code: 601,
         Message: 'Unhandled error during database operation',
+        Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
-    }
+    },
+    //Organization group
+    OrganizationExists: {
+        Code: 701,
+        Message: 'Organzanition already exists',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.CONFLICT,
+    },
+    OrganizationDoesNotExist: {
+        Code: 702,
+        Message: 'Organization does not exist',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
+    MemberExists: {
+        Code: 703,
+        Message: 'Organzanition member already exists',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.CONFLICT,
+    },
+    MemberDoesNotExist: {
+        Code: 704,
+        Message: 'Organzanition member does not exist',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
 };

@@ -100,6 +100,31 @@ export declare const ErrorMessages: {
     DatabaseOperationError: {
         Code: number;
         Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    OrganizationExists: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    OrganizationDoesNotExist: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    MemberExists: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    MemberDoesNotExist: {
+        Code: number;
+        Message: string;
+        Details: string;
         HTTPStatus: StatusCodes;
     };
 };

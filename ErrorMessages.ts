@@ -15,27 +15,6 @@ export const ErrorMessages = {
         Message: 'Unknown Error',
         HTTPStatus: 999,
     },
-    // Auth group
-    Unauthorized: {
-        Code: 400,
-        Message: 'Unauthorized',
-        HTTPStatus: StatusCodes.UNAUTHORIZED,
-    },
-    UnauthorizedorInvalid: {
-        Code: 401,
-        Message: 'Unauthorized.Mismatching or invalid token.',
-        HTTPStatus: StatusCodes.UNAUTHORIZED,
-    },
-    MismatchingTokenParameter: {
-        Code: 402,
-        Message: 'Mismatching Token parameters',
-        HTTPStatus: StatusCodes.UNAUTHORIZED,
-    },
-    IncorrectKey: {
-        Code: 403,
-        Message: 'Incorrect key or password',
-        HTTPStatus: StatusCodes.FORBIDDEN,
-    },
 
     // Entity Group
     InvalidEntity: {
@@ -58,7 +37,6 @@ export const ErrorMessages = {
         Message: 'Entity Already Exists',
         HTTPStatus: StatusCodes.CONFLICT,
     },
-
     EntityDoesNotExist: {
         Code: 105,
         Message: 'Entity does not exist.',
@@ -85,7 +63,29 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
     },
-
+    
+    // Auth group
+    Unauthorized: {
+        Code: 400,
+        Message: 'Unauthorized',
+        HTTPStatus: StatusCodes.UNAUTHORIZED,
+    },
+    UnauthorizedorInvalid: {
+        Code: 401,
+        Message: 'Unauthorized.Mismatching or invalid token.',
+        HTTPStatus: StatusCodes.UNAUTHORIZED,
+    },
+    MismatchingTokenParameter: {
+        Code: 402,
+        Message: 'Mismatching Token parameters',
+        HTTPStatus: StatusCodes.UNAUTHORIZED,
+    },
+    IncorrectKey: {
+        Code: 403,
+        Message: 'Incorrect key or password',
+        HTTPStatus: StatusCodes.FORBIDDEN,
+    },
+    
     // Conversions
     CancelException: {
         Code: 500,
@@ -93,7 +93,7 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
-
+    
     // Generic
     InternalServerError: {
         Code: 500,
@@ -113,4 +113,12 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
     },
+
+    //Database group
+    DatabaseOperationError: {
+        Code: 601,
+        Message: 'Unhandled error during database operation',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+    }
+
 } satisfies Record<string, IError>

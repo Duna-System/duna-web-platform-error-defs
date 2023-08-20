@@ -11,26 +11,6 @@ export declare const ErrorMessages: {
         Message: string;
         HTTPStatus: number;
     };
-    Unauthorized: {
-        Code: number;
-        Message: string;
-        HTTPStatus: StatusCodes;
-    };
-    UnauthorizedorInvalid: {
-        Code: number;
-        Message: string;
-        HTTPStatus: StatusCodes;
-    };
-    MismatchingTokenParameter: {
-        Code: number;
-        Message: string;
-        HTTPStatus: StatusCodes;
-    };
-    IncorrectKey: {
-        Code: number;
-        Message: string;
-        HTTPStatus: StatusCodes;
-    };
     InvalidEntity: {
         Code: number;
         Message: string;
@@ -73,6 +53,26 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
+    Unauthorized: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
+    UnauthorizedorInvalid: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
+    MismatchingTokenParameter: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
+    IncorrectKey: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
     CancelException: {
         Code: number;
         Message: string;
@@ -92,6 +92,36 @@ export declare const ErrorMessages: {
         HTTPStatus: StatusCodes;
     };
     ResourceDoesNotExist: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    DatabaseOperationError: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    OrganizationExists: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    OrganizationDoesNotExist: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    MemberExists: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    MemberDoesNotExist: {
         Code: number;
         Message: string;
         Details: string;

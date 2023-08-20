@@ -10,27 +10,6 @@ exports.ErrorMessages = {
         Message: 'Unknown Error',
         HTTPStatus: 999,
     },
-    // Auth group
-    Unauthorized: {
-        Code: 400,
-        Message: 'Unauthorized',
-        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
-    },
-    UnauthorizedorInvalid: {
-        Code: 401,
-        Message: 'Unauthorized.Mismatching or invalid token.',
-        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
-    },
-    MismatchingTokenParameter: {
-        Code: 402,
-        Message: 'Mismatching Token parameters',
-        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
-    },
-    IncorrectKey: {
-        Code: 403,
-        Message: 'Incorrect key or password',
-        HTTPStatus: http_status_codes_1.StatusCodes.FORBIDDEN,
-    },
     // Entity Group
     InvalidEntity: {
         Code: 101,
@@ -76,6 +55,27 @@ exports.ErrorMessages = {
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
     },
+    // Auth group
+    Unauthorized: {
+        Code: 400,
+        Message: 'Unauthorized',
+        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
+    },
+    UnauthorizedorInvalid: {
+        Code: 401,
+        Message: 'Unauthorized.Mismatching or invalid token.',
+        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
+    },
+    MismatchingTokenParameter: {
+        Code: 402,
+        Message: 'Mismatching Token parameters',
+        HTTPStatus: http_status_codes_1.StatusCodes.UNAUTHORIZED,
+    },
+    IncorrectKey: {
+        Code: 403,
+        Message: 'Incorrect key or password',
+        HTTPStatus: http_status_codes_1.StatusCodes.FORBIDDEN,
+    },
     // Conversions
     CancelException: {
         Code: 500,
@@ -99,6 +99,38 @@ exports.ErrorMessages = {
     ResourceDoesNotExist: {
         Code: 502,
         Message: 'Resource does not exist',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
+    //Database group
+    DatabaseOperationError: {
+        Code: 601,
+        Message: 'Unhandled error during database operation',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
+    },
+    //Organization group
+    OrganizationExists: {
+        Code: 701,
+        Message: 'Organzanition already exists',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.CONFLICT,
+    },
+    OrganizationDoesNotExist: {
+        Code: 702,
+        Message: 'Organization does not exist',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
+    MemberExists: {
+        Code: 703,
+        Message: 'Organzanition member already exists',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.CONFLICT,
+    },
+    MemberDoesNotExist: {
+        Code: 704,
+        Message: 'Organzanition member does not exist',
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
     },

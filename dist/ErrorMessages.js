@@ -134,4 +134,10 @@ exports.ErrorMessages = {
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
     },
+    MembersExceed: {
+        Code: 705,
+        Message: 'Members limit has been reached',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
+    },
 };

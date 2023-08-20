@@ -147,6 +147,12 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
     },
+    MembersExceed: {
+        Code: 705,
+        Message: 'Members limit has been reached',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+    },
 
 
 } satisfies Record<string, IError>

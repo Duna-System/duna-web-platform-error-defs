@@ -133,4 +133,16 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
+    InvalidPermissions: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    InvalidRole: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
 };

@@ -157,7 +157,7 @@ export const ErrorMessages = {
         Code: 706,
         Message: 'Member is not allowed to perform this operation',
         Details: '<details>',
-        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+        HTTPStatus: StatusCodes.FORBIDDEN,
     },
     InvalidRole: {
         Code: 707,

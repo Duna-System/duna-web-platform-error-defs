@@ -153,6 +153,18 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
+    InvalidPermissions: {
+        Code: 706,
+        Message: 'Member is not allowed to perform this operation',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+    },
+    InvalidRole: {
+        Code: 707,
+        Message: 'The role of the request is not valid',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+    },
 
 
 } satisfies Record<string, IError>

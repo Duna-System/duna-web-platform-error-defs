@@ -144,7 +144,7 @@ exports.ErrorMessages = {
         Code: 706,
         Message: 'Member is not allowed to perform this operation',
         Details: '<details>',
-        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
+        HTTPStatus: http_status_codes_1.StatusCodes.FORBIDDEN,
     },
     InvalidRole: {
         Code: 707,

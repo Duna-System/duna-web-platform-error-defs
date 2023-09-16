@@ -47,7 +47,7 @@ export const ErrorMessages = {
     QuotaFull: {
         Code: 200,
         Message: 'Quota is Full',
-        HTTPStatus: StatusCodes.PAYMENT_REQUIRED,
+        HTTPStatus: StatusCodes.REQUEST_TOO_LONG,
     },
 
     // Project group

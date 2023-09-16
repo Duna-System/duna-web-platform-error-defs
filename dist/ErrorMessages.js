@@ -40,7 +40,7 @@ exports.ErrorMessages = {
     QuotaFull: {
         Code: 200,
         Message: 'Quota is Full',
-        HTTPStatus: http_status_codes_1.StatusCodes.PAYMENT_REQUIRED,
+        HTTPStatus: http_status_codes_1.StatusCodes.REQUEST_TOO_LONG,
     },
     // Project group
     ProjectExists: {

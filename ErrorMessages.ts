@@ -166,5 +166,20 @@ export const ErrorMessages = {
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
 
+    //Users
+    UserNotFound: {
+        Code: 801,
+        Message: 'User not found',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.NOT_FOUND,
+    },
+    CannotConnectDatabase: {
+        Code: 802,
+        Message: 'Cannot connect to database',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
+    },
+    
+
 
 } satisfies Record<string, IError>

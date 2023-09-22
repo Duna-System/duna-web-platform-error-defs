@@ -152,4 +152,17 @@ exports.ErrorMessages = {
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
     },
+    //Users
+    UserNotFound: {
+        Code: 801,
+        Message: 'User not found',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
+    CannotConnectDatabase: {
+        Code: 802,
+        Message: 'Cannot connect to database',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
+    },
 };

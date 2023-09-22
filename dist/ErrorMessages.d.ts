@@ -145,4 +145,16 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
+    UserNotFound: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    CannotConnectDatabase: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
 };

@@ -83,6 +83,12 @@ exports.ErrorMessages = {
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
     },
+    // Processing
+    ProcessingNotAllowed: {
+        Code: 900,
+        Message: 'It is not possible to process child entities.',
+        HTTPStatus: http_status_codes_1.StatusCodes.METHOD_NOT_ALLOWED,
+    },
     // Generic
     InternalServerError: {
         Code: 500,

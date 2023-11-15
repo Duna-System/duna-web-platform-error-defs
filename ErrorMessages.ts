@@ -63,7 +63,7 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
     },
-    
+
     // Auth group
     Unauthorized: {
         Code: 400,
@@ -85,7 +85,7 @@ export const ErrorMessages = {
         Message: 'Incorrect key or password',
         HTTPStatus: StatusCodes.FORBIDDEN,
     },
-    
+
     // Conversions
     CancelException: {
         Code: 500,
@@ -93,7 +93,14 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
-    
+
+    // Processing
+    ProcessingNotAllowed: {
+        Code: 900,
+        Message: 'It is not possible to process child entities.',
+        HTTPStatus: StatusCodes.METHOD_NOT_ALLOWED,
+    },
+
     // Generic
     InternalServerError: {
         Code: 500,
@@ -179,7 +186,4 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
-    
-
-
 } satisfies Record<string, IError>

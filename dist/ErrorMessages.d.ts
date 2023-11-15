@@ -79,6 +79,11 @@ export declare const ErrorMessages: {
         Details: string;
         HTTPStatus: StatusCodes;
     };
+    ProcessingNotAllowed: {
+        Code: number;
+        Message: string;
+        HTTPStatus: StatusCodes;
+    };
     InternalServerError: {
         Code: number;
         Message: string;

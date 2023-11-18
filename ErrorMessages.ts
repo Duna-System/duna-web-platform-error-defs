@@ -63,7 +63,7 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
     },
-    
+
     // Auth group
     Unauthorized: {
         Code: 400,
@@ -85,15 +85,7 @@ export const ErrorMessages = {
         Message: 'Incorrect key or password',
         HTTPStatus: StatusCodes.FORBIDDEN,
     },
-    
-    // Conversions
-    CancelException: {
-        Code: 500,
-        Message: 'Error canceling exception.',
-        Details: '<details>',
-        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
-    },
-    
+
     // Generic
     InternalServerError: {
         Code: 500,
@@ -112,6 +104,13 @@ export const ErrorMessages = {
         Message: 'Resource does not exist',
         Details: '<details>',
         HTTPStatus: StatusCodes.NOT_FOUND,
+    },
+    // Conversions
+    CancelException: {
+        Code: 503,
+        Message: 'Error canceling exception.',
+        Details: '<details>',
+        HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
 
     //Database group
@@ -179,7 +178,10 @@ export const ErrorMessages = {
         Details: '<details>',
         HTTPStatus: StatusCodes.INTERNAL_SERVER_ERROR,
     },
-    
-
-
+    // Processing
+    ProcessingNotAllowed: {
+        Code: 900,
+        Message: 'It is not possible to process child entities.',
+        HTTPStatus: StatusCodes.METHOD_NOT_ALLOWED,
+    },
 } satisfies Record<string, IError>

@@ -73,12 +73,6 @@ export declare const ErrorMessages: {
         Message: string;
         HTTPStatus: StatusCodes;
     };
-    CancelException: {
-        Code: number;
-        Message: string;
-        Details: string;
-        HTTPStatus: StatusCodes;
-    };
     InternalServerError: {
         Code: number;
         Message: string;
@@ -92,6 +86,12 @@ export declare const ErrorMessages: {
         HTTPStatus: StatusCodes;
     };
     ResourceDoesNotExist: {
+        Code: number;
+        Message: string;
+        Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    CancelException: {
         Code: number;
         Message: string;
         Details: string;
@@ -155,6 +155,11 @@ export declare const ErrorMessages: {
         Code: number;
         Message: string;
         Details: string;
+        HTTPStatus: StatusCodes;
+    };
+    ProcessingNotAllowed: {
+        Code: number;
+        Message: string;
         HTTPStatus: StatusCodes;
     };
 };

@@ -76,13 +76,6 @@ exports.ErrorMessages = {
         Message: 'Incorrect key or password',
         HTTPStatus: http_status_codes_1.StatusCodes.FORBIDDEN,
     },
-    // Conversions
-    CancelException: {
-        Code: 500,
-        Message: 'Error canceling exception.',
-        Details: '<details>',
-        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
-    },
     // Generic
     InternalServerError: {
         Code: 500,
@@ -101,6 +94,13 @@ exports.ErrorMessages = {
         Message: 'Resource does not exist',
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.NOT_FOUND,
+    },
+    // Conversions
+    CancelException: {
+        Code: 503,
+        Message: 'Error canceling exception.',
+        Details: '<details>',
+        HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
     },
     //Database group
     DatabaseOperationError: {
@@ -164,5 +164,11 @@ exports.ErrorMessages = {
         Message: 'Cannot connect to database',
         Details: '<details>',
         HTTPStatus: http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR,
+    },
+    // Processing
+    ProcessingNotAllowed: {
+        Code: 900,
+        Message: 'It is not possible to process child entities.',
+        HTTPStatus: http_status_codes_1.StatusCodes.METHOD_NOT_ALLOWED,
     },
 };
